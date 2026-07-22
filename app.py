@@ -14,6 +14,22 @@ fully automated by the modules this file orchestrates.
 """
 
 from __future__ import annotations
+import streamlit as st
+import traceback
+
+try:
+    # Hna 7et l imports dyalek kamlin
+    import pandas as pd
+    import numpy as np
+    import plotly.express as px
+    from sklearn.linear_model import LinearRegression
+    
+    # Hna l code dyalek kamel
+
+except Exception as e:
+    st.error("🚨 ERROR F L'APP")
+    st.code(traceback.format_exc())
+    st.stop()
 
 import streamlit as st
 import pandas as pd
